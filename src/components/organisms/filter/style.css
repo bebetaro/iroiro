@@ -1,0 +1,26 @@
+.root {
+  position: relative;
+}
+
+.filter {
+  position: absolute;
+  left: -210%;
+  z-index: 2;
+  width: 500px;
+  background-color: rgba(238, 238, 238, 0.76);
+  border: solid 1px #2facff;
+  border-radius: 4px;
+}
+
+.years {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+  border-bottom: solid 1px #444;
+}
+
+.category > div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+}
