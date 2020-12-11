@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  padding: 12px 0;
+}
+
+.thumbnail {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
