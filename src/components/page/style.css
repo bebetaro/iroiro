@@ -1,0 +1,19 @@
+.root {
+  min-width: 1200px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 12px;
+  background-color: rgb(80, 80, 80);
+}
+
+.header > span {
+  width: 200px;
+}
+
+.header > div {
+  margin-left: auto;
+}
