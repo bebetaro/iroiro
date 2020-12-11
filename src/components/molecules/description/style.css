@@ -1,0 +1,35 @@
+.root {
+  width: 50%;
+  padding: 12px;
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+.label {
+  display: inline-block;
+  width: 200px;
+  height: 32px;
+  padding-top: 2px;
+  margin: 0;
+  background: #2facff;
+  border-radius: 16px;
+}
+
+.title {
+  width: 100%;
+}
+
+.title > span {
+  display: block;
+  width: calc(100% - 200px);
+  padding: 12px 0;
+  text-align: start;
+}
+
+.description {
+  padding-top: 12px;
+}
+
+.description > * {
+  font-family: "NotoSansRegular", sans-serif;
+}

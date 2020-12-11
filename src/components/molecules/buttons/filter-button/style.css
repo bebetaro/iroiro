@@ -1,0 +1,22 @@
+.root {
+  width: 120px;
+  height: 32px;
+  border-radius: 16px;
+  outline: none;
+}
+
+.normal {
+  background-color: grey;
+  border: solid 1px #444;
+}
+
+.normal:hover,
+.normal:focus {
+  opacity: 0.7;
+  transition: ease-in 0.3s;
+}
+
+.active {
+  background-color: #2facff;
+  border: none;
+}

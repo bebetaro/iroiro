@@ -1,0 +1,23 @@
+.root {
+  width: 40px;
+  height: 40px;
+  outline: none;
+}
+
+.root:hover,
+.root:focus {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.left {
+  /* stylelint-disable-next-line */
+  background: no-repeat center
+    url("../../../../assets/images/icon-16-arrow-left.svg");
+}
+
+.right {
+  /* stylelint-disable-next-line */
+  background: no-repeat center
+    url("../../../../assets/images/icon-16-arrow-right.svg");
+}
