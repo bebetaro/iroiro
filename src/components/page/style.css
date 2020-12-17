@@ -1,5 +1,7 @@
 .root {
-  min-width: 1200px;
+  width: 100vw;
+  min-width: 1000px;
+  height: 100vh;
 }
 
 .header {
