@@ -3,10 +3,11 @@ export type Category =
   | "None"
   | "RPG"
   | "Action"
-  | "Shooting"
+  | "Racing"
   | "Novel"
   | "Mobile"
   | "Sports"
   | "MOBA"
   | "Puzzle"
   | "Other";
+export type ModalType = "First" | "Second" | "Third" | "Last" | "Close";
