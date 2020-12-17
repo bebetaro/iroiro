@@ -5,7 +5,7 @@ import React, { useCallback, useState } from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
 import { Filter, Props } from ".";
 import stories from "./test.stories.css";
-import { Category, Year } from "../../../atoms/type";
+import { Category, Year } from "../../../types";
 
 export default {
   title: __dirname,
@@ -19,7 +19,7 @@ export default {
   ],
 } as Meta;
 
-const Template: Story<Props> = (args) => {
+const Template: Story<Props> = () => {
   const [year, setYear] = useState<Year>("None");
   const [category, setCategory] = useState<Category>("None");
   const onClickYear = useCallback(

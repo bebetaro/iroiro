@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
-import { Category, Year } from "../../../atoms/type";
+import { Category, Year } from "../../../types";
 import { FilterButton } from "../../molecules/buttons/filter-button";
 import { Primary } from "../../molecules/buttons/primary";
 
@@ -26,14 +26,11 @@ export const Filter: React.FC<Props> = React.memo(function Filter(props) {
   }, []);
   return (
     <div className={style.root}>
-      <Primary onClick={onClick}>フィルター</Primary>
       <OutsideClickHandler onOutsideClick={onClose}>
+        <Primary onClick={onClick}>フィルター</Primary>
         {isOpen && (
           <div className={style.filter}>
             <div className={style.years}>
-              {/* <Text size={SIZE.SMALL} color={COLOR.BLACK}>
-              年代
-            </Text> */}
               {/* years */}
               <FilterButton
                 isActive={props.year === "90"}
@@ -73,7 +70,7 @@ export const Filter: React.FC<Props> = React.memo(function Filter(props) {
                   isActive={props.category === "Mobile"}
                   onClick={props.onSetCategory("Mobile")}
                 >
-                  ソシャゲ
+                  モバイル
                 </FilterButton>
               </div>
               <div>
@@ -98,10 +95,10 @@ export const Filter: React.FC<Props> = React.memo(function Filter(props) {
               </div>
               <div>
                 <FilterButton
-                  isActive={props.category === "Shooting"}
-                  onClick={props.onSetCategory("Shooting")}
+                  isActive={props.category === "Racing"}
+                  onClick={props.onSetCategory("Racing")}
                 >
-                  ｼｭｰﾃｨﾝｸﾞ
+                  レース
                 </FilterButton>
                 <FilterButton
                   isActive={props.category === "Sports"}
