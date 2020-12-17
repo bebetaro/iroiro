@@ -4,7 +4,7 @@ import { COLOR, SIZE } from "../../../constants";
 import { Text } from "../../atoms/text";
 import style from "./style.css";
 
-export type Props = { title: string; description: string };
+export type Props = { title: string; description: string; url: string };
 
 /**
  * Description Component
@@ -32,6 +32,14 @@ export const Description: React.FC<Props> = React.memo(function Description(
         </p>
         <div className={style.description}>
           <ReactMarkDown>{props.description}</ReactMarkDown>
+          <a
+            href={props.url}
+            target={"_blank"}
+            rel="noreferrer"
+            className={style.link}
+          >
+            公式サイト
+          </a>
         </div>
       </div>
     </div>

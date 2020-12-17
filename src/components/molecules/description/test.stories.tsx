@@ -23,6 +23,7 @@ const Template: Story<Props> = (args) => <Description {...args} />;
 export const Component = Template.bind({});
 Component.args = {
   title: "星のカービィスーパーDX",
+  url: "https://www.nintendo.co.jp/n02/shvc/p_akfj/index.html",
   description: `
   言わずと知れた名作ゲーム  
   協力プレイにミニゲームによる対戦、そして本編まで面白い  
