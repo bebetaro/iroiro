@@ -1,0 +1,12 @@
+.root {
+  width: 120px;
+  height: 40px;
+  background-color: #c1c0b9;
+  border-radius: 12px;
+}
+
+.root:hover,
+.root:focus {
+  background-color: #807f7a;
+  transition: 0.3s;
+}
