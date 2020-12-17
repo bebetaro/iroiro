@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
 import classnames from "classnames";
 import { COLOR, SIZE } from "../../../../constants";
 import { Button } from "../../../atoms/button";
