@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
 import { Carousel, Props } from ".";
 import stories from "./test.stories.css";
+import { Data } from "../../../data";
 
 export default {
   title: __dirname,
@@ -22,7 +23,47 @@ const Template: Story<Props> = (args) => {
   const [_, setCount] = useState<number>(0);
   return <Carousel {...args} setCurrentItem={setCount} />;
 };
-const data = ["km9Il_-FHjw", "NW5vDKhwgm8", "zaDbG9Ik-ZA"];
+const data: Array<Data> = [
+  {
+    videoId: "km9Il_-FHjw",
+    title: "Something Great1",
+    description: `
+  ## This is great Content
+
+  ### Why?
+
+  ### Because it's great
+  `,
+    year: "90",
+    category: "Action",
+  },
+  {
+    videoId: "NW5vDKhwgm8",
+    title: "Something Great2",
+    description: `
+  ## This is great Content
+
+  ### Why?
+
+  ### Because it's great
+  `,
+    year: "90",
+    category: "Action",
+  },
+  {
+    videoId: "zaDbG9Ik-ZA",
+    title: "Something Great3",
+    description: `
+  ## This is great Content
+
+  ### Why?
+
+  ### Because it's great
+  `,
+    year: "90",
+    category: "Action",
+  },
+];
 
 export const Component = Template.bind({});
 Component.args = {

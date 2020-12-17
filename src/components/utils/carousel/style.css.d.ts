@@ -5,3 +5,5 @@ export const each: string;
 export const buttonLeft: string;
 export const buttonRight: string;
 export const item: string;
+export const description: string;
+export const notFound: string;
