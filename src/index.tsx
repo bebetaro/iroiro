@@ -1,7 +1,10 @@
 import "reboot.css";
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactModal from "react-modal";
 import { Page } from "./components/page";
+
+ReactModal.setAppElement("#root");
 
 const App = () => {
   return (
