@@ -1,8 +1,15 @@
 .root {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 60%;
   padding: 12px 0;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.item {
+  display: inline-block;
+  padding: 0 12px;
 }
 
 .thumbnail {

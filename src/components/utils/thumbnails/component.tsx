@@ -5,7 +5,7 @@ import style from "./style.css";
 
 export type Props = {
   data: Array<string>;
-  setIndex: React.Dispatch<React.SetStateAction<number>>;
+  setIndex: (index: number) => void;
 };
 
 /**
@@ -21,20 +21,21 @@ export const Thumbnails: React.FC<Props> = React.memo(function Thumbnails(
     []
   );
   return (
-    <div className={style.root}>
+    <ul className={style.root}>
       {props.data.map((id, key) => {
         return (
-          <div
-            key={id}
-            className={style.thumbnail}
-            style={{
-              background: `no-repeat center url(http://img.youtube.com/vi/${id}/default.jpg)`,
-            }}
-          >
-            <Button onClick={onClick(key)} />
-          </div>
+          <li key={id} className={style.item}>
+            <div
+              className={style.thumbnail}
+              style={{
+                background: `no-repeat center url(http://img.youtube.com/vi/${id}/default.jpg)`,
+              }}
+            >
+              <Button onClick={onClick(key)} />
+            </div>
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 });
