@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(216, 235, 252, 0.7);
+}
+
+.root > div > h2 {
+  padding-bottom: 24px;
+  opacity: 0;
+}
+
+.first {
+  animation: fade 1s ease-in-out 1s forwards;
+}
+
+.second {
+  animation: fade 1s ease-in-out 2s forwards;
+}
+
+.third {
+  animation: fade 1s ease-in-out 3s forwards;
+}
+
+.fourth {
+  animation: fade 1s ease-in-out 4s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
