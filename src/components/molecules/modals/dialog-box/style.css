@@ -1,0 +1,14 @@
+.root {
+  width: 300px;
+  background-color: #2792c3;
+  border-radius: 8px;
+}
+
+.root > span {
+  padding: 12px 0;
+  white-space: pre-line;
+}
+
+.root > div {
+  margin: 0 auto;
+}
