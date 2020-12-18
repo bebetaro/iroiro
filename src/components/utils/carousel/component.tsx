@@ -7,6 +7,7 @@ import { Arrow } from "../../molecules/buttons/arrow";
 import { Description } from "../../molecules/description";
 import { Iframe } from "../iframe";
 import { Thumbnails } from "../thumbnails";
+import { VideoImage } from "../video-image";
 import { useControlAnimation } from "./hooks";
 
 import style from "./style.css";
@@ -72,20 +73,14 @@ export const Carousel: React.FC<Props> = React.memo(function Carousel(props) {
         {props.data.length > 2 && (
           <div className={style.each} style={{ height: "100%" }}>
             <div className={style.item}>
-              <Iframe
-                videoId={props.data[props.data.length - 2].videoId}
-                isPlay={false}
-              />
+              <VideoImage id={props.data[props.data.length - 2].videoId} />
             </div>
           </div>
         )}
         {props.data.length > 1 && (
           <div className={style.each} style={{ height: "100%" }}>
             <div className={style.item}>
-              <Iframe
-                videoId={props.data[props.data.length - 1].videoId}
-                isPlay={false}
-              />
+              <VideoImage id={props.data[props.data.length - 1].videoId} />
             </div>
           </div>
         )}
@@ -94,10 +89,14 @@ export const Carousel: React.FC<Props> = React.memo(function Carousel(props) {
           return (
             <div className={style.each} key={key} style={{ height: "100%" }}>
               <div className={style.item}>
-                <Iframe
-                  videoId={item.videoId}
-                  isPlay={key === props.currentIndex}
-                />
+                {key === props.currentIndex ? (
+                  <Iframe
+                    videoId={item.videoId}
+                    isPlay={key === props.currentIndex}
+                  />
+                ) : (
+                  <VideoImage id={item.videoId} />
+                )}
               </div>
             </div>
           );
@@ -105,14 +104,14 @@ export const Carousel: React.FC<Props> = React.memo(function Carousel(props) {
         {props.data.length > 1 && (
           <div className={style.each} style={{ height: "100%" }}>
             <div className={style.item}>
-              <Iframe videoId={props.data[0].videoId} isPlay={false} />
+              <VideoImage id={props.data[0].videoId} />
             </div>
           </div>
         )}
         {props.data.length > 2 && (
           <div className={style.each} style={{ height: "100%" }}>
             <div className={style.item}>
-              <Iframe videoId={props.data[1].videoId} isPlay={false} />
+              <VideoImage id={props.data[1].videoId} />
             </div>
           </div>
         )}
