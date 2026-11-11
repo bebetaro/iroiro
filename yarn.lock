@@ -2311,21 +2311,21 @@
     pretty-format "^26.0.0"
 
 "@types/js-cookie@^2.2.6":
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.2.6.tgz#f1a1cb35aff47bc5cfb05cb0c441ca91e914c26f"
-  integrity sha512-+oY0FDTO2GYKEV0YPvSshGq9t7YozVkgvXLty7zogQNuCxBhT9/3INX9Q7H1aRZ4SUDRXAKlJuA4EA5nTt7SNw==
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.2.7.tgz#226a9e31680835a6188e887f3988e60c04d3f6a3"
+  integrity sha512-aLkWa0C0vO5b4Sr798E26QgOkss68Un0bLjs7u9qxzPT5CG+8DuNTffWES58YzJs3hrVAOs1wonycqEBqNJubA==
 
 "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
-  integrity sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw==
+  version "7.0.15"
+  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
+  integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
 "@types/keyv@*":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@types/keyv/-/keyv-3.1.1.tgz#e45a45324fca9dab716ab1230ee249c9fb52cfa7"
-  integrity sha512-MPtoySlAZQ37VoLaPcTHCu1RWJ4llDkULYZIzOYxlhxBqYPB0RsRlmMU0R6tahtFe27mIdkHV+551ZWV4PLmVw==
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@types/keyv/-/keyv-4.2.0.tgz#65b97868ab757906f2dbb653590d7167ad023fa0"
+  integrity sha512-xoBtGl5R9jeKUhc8ZqeYaRDx04qqJ10yhhXYGmJ4Jr8qKpvMsDQQrNUvF/wUJ4klOtmJeJM+p2Xo3zp9uaC3tw==
   dependencies:
-    "@types/node" "*"
+    keyv "*"
 
 "@types/lodash-es@^4.17.3":
   version "4.17.3"
@@ -7216,6 +7216,11 @@ homedir-polyfill@^1.0.1:
   dependencies:
     parse-passwd "^1.0.0"
 
+hookified@^3.0.3:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/hookified/-/hookified-3.1.0.tgz#f0035a0dbb3a1f25dcc1f56907cbe0458322a974"
+  integrity sha512-G2jPVpzwIiV7pcYcg62ngNvY+y0iCkKmuJIaQpomFdvtY89UiSvWuPiNo1AalSr1t2op1cdz21ZThZc3DSbmvA==
+
 hosted-git-info@^2.1.4:
   version "2.8.8"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
@@ -8799,6 +8804,13 @@ junk@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/junk/-/junk-3.1.0.tgz#31499098d902b7e98c5d9b9c80f43457a88abfa1"
   integrity sha512-pBxcB3LFc8QVgdggvZWyeys+hnrNWg4OcZIU/1X59k5jQdLBlCsYGRQaz234SqoRLTCgMH00fY0xRJH+F9METQ==
+
+keyv@*:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/keyv/-/keyv-6.1.0.tgz#e3608f04569a8b5324ec8958bfa5b973033f5716"
+  integrity sha512-0OO64DxKOITdyQljNCcO+vc+iyaPmm3OV5eKOWRxWCp3V0QnXenpqcKfjGjycNILUJNV+erm1ose6Hsgr1fNFA==
+  dependencies:
+    hookified "^3.0.3"
 
 keyv@^4.0.0:
   version "4.0.3"
